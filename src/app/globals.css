@@ -1,10 +1,8 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Custom CSS Variables for consistent theming */
-/*
 :root {
   --coffee-primary: #d67329;
   --coffee-secondary: #b85d1f;
@@ -17,7 +15,6 @@
 }
 
 /* Base styles */
-/*
 @layer base {
   * {
     @apply border-border;
@@ -29,13 +26,11 @@
   }
   
   /* Smooth scrolling */
-  /*
   html {
     scroll-behavior: smooth;
   }
   
   /* Custom scrollbar */
-  /*
   ::-webkit-scrollbar {
     width: 8px;
   }
@@ -54,10 +49,8 @@
 }
 
 /* Component styles */
-/*
 @layer components {
   /* Button variants */
-  /*
   .btn-primary {
     @apply bg-coffee-500 text-white hover:bg-coffee-600 focus:ring-coffee-500 focus:ring-2 focus:ring-offset-2 px-4 py-2 rounded-lg font-medium transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
   }
@@ -75,7 +68,6 @@
   }
   
   /* Input styles */
-  /*
   .input-field {
     @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-coffee-500 focus:border-coffee-500 transition-colors duration-200 disabled:bg-gray-100 disabled:cursor-not-allowed;
   }
@@ -85,7 +77,6 @@
   }
   
   /* Card styles */
-  /*
   .card {
     @apply bg-white rounded-xl shadow-soft p-6 border border-gray-100;
   }
@@ -95,7 +86,6 @@
   }
   
   /* Status badges */
-  /*
   .badge {
     @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
   }
@@ -117,7 +107,6 @@
   }
   
   /* Animation classes */
-  /*
   .animate-fade-in {
     animation: fadeIn 0.3s ease-in-out;
   }
@@ -132,7 +121,6 @@
 }
 
 /* Utility classes */
-/*
 @layer utilities {
   .text-shadow {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -151,10 +139,17 @@
   .gradient-cream {
     background: linear-gradient(135deg, #f0a84d 0%, #d8903d 100%);
   }
+  
+  .shadow-soft {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .shadow-coffee {
+    box-shadow: 0 10px 25px -3px rgba(214, 115, 41, 0.1), 0 4px 6px -2px rgba(214, 115, 41, 0.05);
+  }
 }
 
 /* Custom animations */
-/*
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -176,7 +171,6 @@
 }
 
 /* Loading states */
-/*
 .loading {
   @apply animate-pulse;
 }
@@ -194,7 +188,6 @@
 }
 
 /* Print styles */
-/*
 @media print {
   .no-print {
     display: none !important;
@@ -206,11 +199,9 @@
 }
 
 /* Dark mode support (for future implementation) */
-/*
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0f0f0f;
     --foreground: #ededed;
   }
 }
-*/
